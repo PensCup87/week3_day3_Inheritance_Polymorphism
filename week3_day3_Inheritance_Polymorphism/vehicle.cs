@@ -6,19 +6,22 @@ using System.Threading.Tasks;
 
 namespace week3_day3_Inheritance_Polymorphism
 {
-    class vehicle
+   abstract class vehicle
     {
+        //not supposed to create an INSTANCE OF AN ABSTRACT CLASS
+        //forces others to inherit the fields, properties, and methods
         //fields
-        private int seats;
-        private int carryingCapacity;
-        private string color;
-        private double movementSpeed;
-        private float gearRatio;
-        private float engineSize;
-        private double distanceTraveled;
+        protected int seats;
+        protected int carryingCapacity;
+        protected string color;
+        protected double movementSpeed;
+        //private float gearRatio;
+        //private float engineSize;
+        protected double distanceTraveled;
 
 
         //Properties - made public so the Program.cs can access
+        //allow interaction without having to use a Method
         public int Seats
         {
             get { return this.seats; }
@@ -54,7 +57,8 @@ namespace week3_day3_Inheritance_Polymorphism
         }
 
         //Added a Method
-        public void Move()
+        //THen CHNAGED TO VIRTUAL
+        public virtual void Move()
         {
             //distanceTraveled = distanceTraveled + movementSpeed;
             distanceTraveled += movementSpeed;
