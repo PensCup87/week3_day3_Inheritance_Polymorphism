@@ -23,7 +23,7 @@ namespace week3_day3_Inheritance_Polymorphism
             Automobile auto1 = new Automobile(4, 13, 2, 4, 1500, "Burnt Orange", 89d);
             auto1.Move();
             auto1.Move();
-            Console.WriteLine("Auto1 distance traveled: " + auto1.DistanceTraveled);
+            Console.WriteLine("Auto1 distance traveled: " + auto1.GetDistanceTraveled());
             //the .distancedTraveled is a property and has to be called
 
 
@@ -31,12 +31,12 @@ namespace week3_day3_Inheritance_Polymorphism
             Boat boat1 = new Boat(2, 500, "silver and black", 88d, .9d);
             boat1.Move();
             boat1.Move();
-            Console.WriteLine("Boat Distance Traveled: " + boat1.DistanceTraveled);
+            Console.WriteLine("Boat Distance Traveled: " + boat1.GetDistanceTraveled());
 
             Aircraft plane1 = new Aircraft(70, 100000, "Chrome", 600);
             plane1.Move();
             plane1.Move();
-            Console.WriteLine("The plane " + plane1.DistanceTraveled);//calling the calculation that accompanies the method
+            Console.WriteLine("The plane " + plane1.GetDistanceTraveled());//calling the calculation that accompanies the method
         }
     }
 }

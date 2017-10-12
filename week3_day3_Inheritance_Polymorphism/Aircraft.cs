@@ -25,6 +25,12 @@ namespace week3_day3_Inheritance_Polymorphism
             altitude = altitude + 10000d;
             base.Move();//keeping this becuse the aircraft moves forward
         }
+        //override - to make a used method specific to this class - to INCLUDE THE ALTITUDE
+        public override string GetDistanceTraveled()
+        {
+            return "Altitude: " + altitude + " - " +base.GetDistanceTraveled();
+        }
+
 
     }
     }

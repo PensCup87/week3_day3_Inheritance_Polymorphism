@@ -64,7 +64,10 @@ namespace week3_day3_Inheritance_Polymorphism
             distanceTraveled += movementSpeed;
         }
 
-        //REFACTORING
-        
+        //REFACTORING - made a new method to not repeat code
+        public virtual string GetDistanceTraveled()
+        {
+            return "Distance Travel: " + distanceTraveled + "\n";
+        }       
     }
 }
