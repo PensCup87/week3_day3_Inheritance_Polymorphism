@@ -30,7 +30,7 @@ namespace week3_day3_Inheritance_Polymorphism
             this.wheelSize = wheelSize;
             this.numberOfDoors = numberOfDoors;
 
-            //the below fields are borrowed from the Vehicle Class
+            //the below fields are borrowed from the Vehicle Class - Called from Parent Class
             this.seats = seats;
             this.carryingCapacity = carryingCapacity;
             this.color = color;
