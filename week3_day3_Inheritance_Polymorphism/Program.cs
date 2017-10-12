@@ -10,10 +10,10 @@ namespace week3_day3_Inheritance_Polymorphism
     {
         static void Main(string[] args)
         {
-            vehicle baseVehicle = new vehicle(4, 2000, "Black", 55d);//creating the object in Program
-            baseVehicle.Move();//calling a method on the object
-            baseVehicle.Move();
-            Console.WriteLine(baseVehicle.DistanceTraveled);//calling a property
+            //vehicle baseVehicle = new vehicle(4, 2000, "Black", 55d);//creating the object in Program
+            //baseVehicle.Move();//calling a method on the object
+            //baseVehicle.Move();
+            //Console.WriteLine(baseVehicle.DistanceTraveled);//calling a property
 
 
 
@@ -32,6 +32,11 @@ namespace week3_day3_Inheritance_Polymorphism
             boat1.Move();
             boat1.Move();
             Console.WriteLine("Boat Distance Traveled: " + boat1.DistanceTraveled);
+
+            Aircraft plane1 = new Aircraft(70, 100000, "Chrome", 600);
+            plane1.Move();
+            plane1.Move();
+            Console.WriteLine("The plane " + plane1.DistanceTraveled);//calling the calculation that accompanies the method
         }
     }
 }

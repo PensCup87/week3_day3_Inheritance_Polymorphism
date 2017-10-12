@@ -63,6 +63,8 @@ namespace week3_day3_Inheritance_Polymorphism
             //distanceTraveled = distanceTraveled + movementSpeed;
             distanceTraveled += movementSpeed;
         }
+
+        //REFACTORING
         
     }
 }

@@ -9,7 +9,7 @@ namespace week3_day3_Inheritance_Polymorphism
     class Automobile : vehicle
     {
         //want this class to inherit from BaseVehicle with : vehicle
-        //has all fields of vehicle and automobile
+        //has all fields of vehicle and automobile, but automobile fields are specific to Automobile
         private int numberOfWheels;
         private float wheelSize;
         private int numberOfDoors;
